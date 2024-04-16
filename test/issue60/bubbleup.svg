@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="597.89pt" height="1075pt" version="1.1" viewBox="0 0 597.89 1075.2" xmlns="http://www.w3.org/2000/svg">
+<g class="graph" transform="translate(3.9444 1071.2)">
+<title>G</title>
+<polygon points="594 -1071.2 594 4 -4 4 -4 -1071.2" fill="#fff" stroke="transparent"/>
+<g class="cluster">
+<title>cluster_0</title>
+<polygon points="222 -1059.2 222 -766.4 8 -766.4 8 -1059.2" fill="none" stroke="#000"/>
+<text x="115" y="-1042.6" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">Step 1</text>
+</g>
+<g class="cluster">
+<title>cluster_1</title>
+<polygon points="294 -758.4 294 -537.6 8 -537.6 8 -758.4" fill="none" stroke="#000"/>
+<text x="151" y="-741.79999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">Step 2</text>
+</g>
+<g class="cluster">
+<title>cluster_2</title>
+<polygon points="582 -529.6 582 -236.8 8 -236.8 8 -529.6" fill="none" stroke="#000"/>
+<text x="295" y="-513" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">Step 3</text>
+</g>
+<g class="cluster">
+<title>cluster_3</title>
+<polygon points="582 -228.8 582 -8 8 -8 8 -228.8" fill="none" stroke="#000"/>
+<text x="295" y="-212.2" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">Step 4</text>
+</g>
+<g class="node">
+<title>And</title>
+<ellipse cx="149" cy="-1008.4" rx="27.831" ry="18" fill="none" stroke="#000"/>
+<text x="149" y="-1004.2" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">And</text>
+</g>
+<g class="node">
+<title>Eq</title>
+<ellipse cx="149" cy="-936.4" rx="27" ry="18" fill="none" stroke="#000"/>
+<text x="149" y="-932.20001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">Eq</text>
+</g>
+<g class="edge">
+<title>And-&gt;Eq</title>
+<path d="m149-990.23v25.415" fill="none" stroke="#000"/>
+<polygon points="145.5 -964.81 152.5 -964.81 149 -954.81" stroke="#000"/>
+</g>
+<g class="node">
+<title>Sum</title>
+<ellipse cx="113" cy="-864.4" rx="28.993" ry="18" fill="none" stroke="#000"/>
+<text x="113" y="-860.20001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">Sum</text>
+</g>
+<g class="edge">
+<title>Eq-&gt;Sum</title>
+<path d="m140.29-918.97c-4.2451 8.4901-9.439 18.878-14.152 28.303" fill="none" stroke="#000"/>
+<polygon points="122.98 -892.18 129.24 -889.05 121.63 -881.67" stroke="#000"/>
+</g>
+<g class="node">
+<title>4a</title>
+<polygon points="160 -846.4 214 -846.4 214 -882.4 160 -882.4" fill="none" stroke="#000"/>
+<text x="187" y="-860.20001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">4</text>
+</g>
+<g class="edge">
+<title>Eq-&gt;4a</title>
+<path d="m158.01-919.34c4.3785 8.2961 9.747 18.468 14.669 27.794" fill="none" stroke="#000"/>
+<polygon points="169.63 -889.81 175.82 -893.08 177.39 -882.6" stroke="#000"/>
+</g>
+<g class="node">
+<title>a1</title>
+<polygon points="16 -774.4 70 -774.4 70 -810.4 16 -810.4" fill="none" stroke="#000"/>
+<text x="43" y="-788.20001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">a</text>
+</g>
+<g class="edge">
+<title>Sum-&gt;a1</title>
+<path d="m97.811-848.78c-8.8009 9.0525-20.094 20.668-30.14 31.001" fill="none" stroke="#000"/>
+<polygon points="65.091 -820.14 70.11 -815.26 60.63 -810.53" stroke="#000"/>
+</g>
+<g class="node">
+<title>b1</title>
+<polygon points="88 -774.4 142 -774.4 142 -810.4 88 -810.4" fill="none" stroke="#000"/>
+<text x="115" y="-788.20001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">b</text>
+</g>
+<g class="edge">
+<title>Sum-&gt;b1</title>
+<path d="m113.5-846.23c0.2139 7.7004 0.4682 16.857 0.7059 25.415" fill="none" stroke="#000"/>
+<polygon points="110.71 -820.71 117.71 -820.91 114.49 -810.81" stroke="#000"/>
+</g>
+<g class="node">
+<title>c1</title>
+<polygon points="160 -774.4 214 -774.4 214 -810.4 160 -810.4" fill="none" stroke="#000"/>
+<text x="187" y="-788.20001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">c</text>
+</g>
+<g class="edge">
+<title>Sum-&gt;c1</title>
+<path d="m128.69-849.13c9.445 9.1898 21.7 21.114 32.536 31.656" fill="none" stroke="#000"/>
+<polygon points="158.84 -814.91 163.73 -819.93 168.45 -810.45" stroke="#000"/>
+</g>
+<g class="node">
+<title>And1</title>
+<ellipse cx="115" cy="-707.6" rx="27.831" ry="18" fill="none" stroke="#000"/>
+<text x="115" y="-703.40002" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">And</text>
+</g>
+<g class="node">
+<title>SumEq</title>
+<ellipse cx="115" cy="-635.6" rx="39.447" ry="18" fill="none" stroke="#000"/>
+<text x="115" y="-631.40002" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">SumEq</text>
+</g>
+<g class="edge">
+<title>And1-&gt;SumEq</title>
+<path d="m115-689.43v25.415" fill="none" stroke="#000"/>
+<polygon points="111.5 -664.01 118.5 -664.01 115 -654.01" stroke="#000"/>
+</g>
+<g class="node">
+<title>a2</title>
+<polygon points="16 -545.6 70 -545.6 70 -581.6 16 -581.6" fill="none" stroke="#000"/>
+<text x="43" y="-559.40002" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">a</text>
+</g>
+<g class="edge">
+<title>SumEq-&gt;a2</title>
+<path d="m98.301-618.9-29.881 29.881" fill="none" stroke="#000"/>
+<polygon points="65.718 -591.27 70.668 -586.32 61.122 -581.72" stroke="#000"/>
+</g>
+<g class="node">
+<title>b2</title>
+<polygon points="88 -545.6 142 -545.6 142 -581.6 88 -581.6" fill="none" stroke="#000"/>
+<text x="115" y="-559.40002" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">b</text>
+</g>
+<g class="edge">
+<title>SumEq-&gt;b2</title>
+<path d="m115-617.43v25.415" fill="none" stroke="#000"/>
+<polygon points="111.5 -592.01 118.5 -592.01 115 -582.01" stroke="#000"/>
+</g>
+<g class="node">
+<title>c2</title>
+<polygon points="160 -545.6 214 -545.6 214 -581.6 160 -581.6" fill="none" stroke="#000"/>
+<text x="187" y="-559.40002" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">c</text>
+</g>
+<g class="edge">
+<title>SumEq-&gt;c2</title>
+<path d="m131.7-618.9 29.881 29.881" fill="none" stroke="#000"/>
+<polygon points="159.33 -586.32 164.28 -591.27 168.88 -581.72" stroke="#000"/>
+</g>
+<g class="node">
+<title>4b</title>
+<polygon points="232 -545.6 286 -545.6 286 -581.6 232 -581.6" fill="none" stroke="#000"/>
+<text x="259" y="-559.40002" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">4</text>
+</g>
+<g class="edge">
+<title>SumEq-&gt;4b</title>
+<path d="m141.75-622.23c22.79 11.395 55.754 27.877 80.929 40.464" fill="none" stroke="#000"/>
+<polygon points="221.4 -578.49 224.53 -584.75 231.91 -577.15" stroke="#000"/>
+</g>
+<g class="node">
+<title>And3</title>
+<ellipse cx="187" cy="-478.8" rx="27.831" ry="18" fill="none" stroke="#000"/>
+<text x="187" y="-474.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">And</text>
+</g>
+<g class="node">
+<title>And2</title>
+<ellipse cx="187" cy="-406.8" rx="27.831" ry="18" fill="none" stroke="#000"/>
+<text x="187" y="-402.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">And</text>
+</g>
+<g class="edge">
+<title>And3-&gt;And2</title>
+<path d="m187-460.63v25.415" fill="none" stroke="#000"/>
+<polygon points="183.5 -435.21 190.5 -435.21 187 -425.21" stroke="#000"/>
+</g>
+<g class="node">
+<title>SumLeq1</title>
+<ellipse cx="187" cy="-334.8" rx="43.521" ry="18" fill="none" stroke="#000"/>
+<text x="187" y="-330.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">SumLeq</text>
+</g>
+<g class="edge">
+<title>And2-&gt;SumLeq1</title>
+<path d="m187-388.63v25.415" fill="none" stroke="#000"/>
+<polygon points="183.5 -363.21 190.5 -363.21 187 -353.21" stroke="#000"/>
+</g>
+<g class="node">
+<title>SumGeq1</title>
+<ellipse cx="403" cy="-334.8" rx="44.665" ry="18" fill="none" stroke="#000"/>
+<text x="403" y="-330.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">SumGeq</text>
+</g>
+<g class="edge">
+<title>And2-&gt;SumGeq1</title>
+<path d="m211.78-398.54c35.748 11.916 102.36 34.121 146.76 48.919" fill="none" stroke="#000"/>
+<polygon points="357.61 -346.24 359.82 -352.88 368.2 -346.4" stroke="#000"/>
+</g>
+<g class="node">
+<title>a3</title>
+<polygon points="16 -244.8 70 -244.8 70 -280.8 16 -280.8" fill="none" stroke="#000"/>
+<text x="43" y="-258.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">a</text>
+</g>
+<g class="edge">
+<title>SumLeq1-&gt;a3</title>
+<path d="m158.89-320.75c-22.789 11.395-55.065 27.533-79.771 39.886" fill="none" stroke="#000"/>
+<polygon points="77.439 -283.93 80.57 -277.67 70.06 -276.33" stroke="#000"/>
+</g>
+<g class="node">
+<title>b3</title>
+<polygon points="88 -244.8 142 -244.8 142 -280.8 88 -280.8" fill="none" stroke="#000"/>
+<text x="115" y="-258.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">b</text>
+</g>
+<g class="edge">
+<title>SumLeq1-&gt;b3</title>
+<path d="m170.3-318.1-29.881 29.881" fill="none" stroke="#000"/>
+<polygon points="137.72 -290.47 142.67 -285.52 133.12 -280.92" stroke="#000"/>
+</g>
+<g class="node">
+<title>c3</title>
+<polygon points="160 -244.8 214 -244.8 214 -280.8 160 -280.8" fill="none" stroke="#000"/>
+<text x="187" y="-258.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">c</text>
+</g>
+<g class="edge">
+<title>SumLeq1-&gt;c3</title>
+<path d="m187-316.63v25.415" fill="none" stroke="#000"/>
+<polygon points="183.5 -291.21 190.5 -291.21 187 -281.21" stroke="#000"/>
+</g>
+<g class="node">
+<title>4c</title>
+<polygon points="232 -244.8 286 -244.8 286 -280.8 232 -280.8" fill="none" stroke="#000"/>
+<text x="259" y="-258.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">4</text>
+</g>
+<g class="edge">
+<title>SumLeq1-&gt;4c</title>
+<path d="m203.7-318.1 29.881 29.881" fill="none" stroke="#000"/>
+<polygon points="231.33 -285.52 236.28 -290.47 240.88 -280.92" stroke="#000"/>
+</g>
+<g class="node">
+<title>a4</title>
+<polygon points="304 -244.8 358 -244.8 358 -280.8 304 -280.8" fill="none" stroke="#000"/>
+<text x="331" y="-258.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">a</text>
+</g>
+<g class="edge">
+<title>SumGeq1-&gt;a4</title>
+<path d="m385.94-317.74-29.532 29.532" fill="none" stroke="#000"/>
+<polygon points="353.8 -290.55 358.75 -285.6 349.2 -281" stroke="#000"/>
+</g>
+<g class="node">
+<title>b4</title>
+<polygon points="376 -244.8 430 -244.8 430 -280.8 376 -280.8" fill="none" stroke="#000"/>
+<text x="403" y="-258.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">b</text>
+</g>
+<g class="edge">
+<title>SumGeq1-&gt;b4</title>
+<path d="m403-316.63v25.415" fill="none" stroke="#000"/>
+<polygon points="399.5 -291.21 406.5 -291.21 403 -281.21" stroke="#000"/>
+</g>
+<g class="node">
+<title>c4</title>
+<polygon points="448 -244.8 502 -244.8 502 -280.8 448 -280.8" fill="none" stroke="#000"/>
+<text x="475" y="-258.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">c</text>
+</g>
+<g class="edge">
+<title>SumGeq1-&gt;c4</title>
+<path d="m420.06-317.74 29.532 29.532" fill="none" stroke="#000"/>
+<polygon points="447.25 -285.6 452.2 -290.55 456.8 -281" stroke="#000"/>
+</g>
+<g class="node">
+<title>4d</title>
+<polygon points="520 -244.8 574 -244.8 574 -280.8 520 -280.8" fill="none" stroke="#000"/>
+<text x="547" y="-258.60001" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">4</text>
+</g>
+<g class="edge">
+<title>SumGeq1-&gt;4d</title>
+<path d="m431.11-320.75c22.789 11.395 55.065 27.533 79.771 39.886" fill="none" stroke="#000"/>
+<polygon points="509.43 -277.67 512.56 -283.93 519.94 -276.33" stroke="#000"/>
+</g>
+<g class="node">
+<title>And4</title>
+<ellipse cx="187" cy="-178" rx="27.831" ry="18" fill="none" stroke="#000"/>
+<text x="187" y="-173.8" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">And</text>
+</g>
+<g class="node">
+<title>SumLeq2</title>
+<ellipse cx="187" cy="-106" rx="43.521" ry="18" fill="none" stroke="#000"/>
+<text x="187" y="-101.8" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">SumLeq</text>
+</g>
+<g class="edge">
+<title>And4-&gt;SumLeq2</title>
+<path d="m187-159.83v25.415" fill="none" stroke="#000"/>
+<polygon points="183.5 -134.41 190.5 -134.41 187 -124.41" stroke="#000"/>
+</g>
+<g class="node">
+<title>SumGeq2</title>
+<ellipse cx="403" cy="-106" rx="44.665" ry="18" fill="none" stroke="#000"/>
+<text x="403" y="-101.8" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">SumGeq</text>
+</g>
+<g class="edge">
+<title>And4-&gt;SumGeq2</title>
+<path d="m211.78-169.74c35.748 11.916 102.36 34.121 146.76 48.919" fill="none" stroke="#000"/>
+<polygon points="357.61 -117.44 359.82 -124.08 368.2 -117.6" stroke="#000"/>
+</g>
+<g class="node">
+<title>a5</title>
+<polygon points="16 -16 70 -16 70 -52 16 -52" fill="none" stroke="#000"/>
+<text x="43" y="-29.799999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">a</text>
+</g>
+<g class="edge">
+<title>SumLeq2-&gt;a5</title>
+<path d="m158.89-91.947c-22.789 11.395-55.065 27.533-79.771 39.886" fill="none" stroke="#000"/>
+<polygon points="77.439 -55.133 80.57 -48.872 70.06 -47.53" stroke="#000"/>
+</g>
+<g class="node">
+<title>b5</title>
+<polygon points="88 -16 142 -16 142 -52 88 -52" fill="none" stroke="#000"/>
+<text x="115" y="-29.799999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">b</text>
+</g>
+<g class="edge">
+<title>SumLeq2-&gt;b5</title>
+<path d="m170.3-89.301-29.881 29.881" fill="none" stroke="#000"/>
+<polygon points="137.72 -61.668 142.67 -56.718 133.12 -52.122" stroke="#000"/>
+</g>
+<g class="node">
+<title>c5</title>
+<polygon points="160 -16 214 -16 214 -52 160 -52" fill="none" stroke="#000"/>
+<text x="187" y="-29.799999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">c</text>
+</g>
+<g class="edge">
+<title>SumLeq2-&gt;c5</title>
+<path d="m187-87.831v25.415" fill="none" stroke="#000"/>
+<polygon points="183.5 -62.413 190.5 -62.413 187 -52.413" stroke="#000"/>
+</g>
+<g class="node">
+<title>4e</title>
+<polygon points="232 -16 286 -16 286 -52 232 -52" fill="none" stroke="#000"/>
+<text x="259" y="-29.799999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">4</text>
+</g>
+<g class="edge">
+<title>SumLeq2-&gt;4e</title>
+<path d="m203.7-89.301 29.881 29.881" fill="none" stroke="#000"/>
+<polygon points="231.33 -56.718 236.28 -61.668 240.88 -52.122" stroke="#000"/>
+</g>
+<g class="node">
+<title>a6</title>
+<polygon points="304 -16 358 -16 358 -52 304 -52" fill="none" stroke="#000"/>
+<text x="331" y="-29.799999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">a</text>
+</g>
+<g class="edge">
+<title>SumGeq2-&gt;a6</title>
+<path d="m385.94-88.937-29.532 29.532" fill="none" stroke="#000"/>
+<polygon points="353.8 -61.745 358.75 -56.795 349.2 -52.199" stroke="#000"/>
+</g>
+<g class="node">
+<title>b6</title>
+<polygon points="376 -16 430 -16 430 -52 376 -52" fill="none" stroke="#000"/>
+<text x="403" y="-29.799999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">b</text>
+</g>
+<g class="edge">
+<title>SumGeq2-&gt;b6</title>
+<path d="m403-87.831v25.415" fill="none" stroke="#000"/>
+<polygon points="399.5 -62.413 406.5 -62.413 403 -52.413" stroke="#000"/>
+</g>
+<g class="node">
+<title>c6</title>
+<polygon points="448 -16 502 -16 502 -52 448 -52" fill="none" stroke="#000"/>
+<text x="475" y="-29.799999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">c</text>
+</g>
+<g class="edge">
+<title>SumGeq2-&gt;c6</title>
+<path d="m420.06-88.937 29.532 29.532" fill="none" stroke="#000"/>
+<polygon points="447.25 -56.795 452.2 -61.745 456.8 -52.199" stroke="#000"/>
+</g>
+<g class="node">
+<title>4f</title>
+<polygon points="520 -16 574 -16 574 -52 520 -52" fill="none" stroke="#000"/>
+<text x="547" y="-29.799999" fill="#000000" font-family="Times, serif" font-size="14px" text-anchor="middle">4</text>
+</g>
+<g class="edge">
+<title>SumGeq2-&gt;4f</title>
+<path d="m431.11-91.947c22.789 11.395 55.065 27.533 79.771 39.886" fill="none" stroke="#000"/>
+<polygon points="509.43 -48.872 512.56 -55.133 519.94 -47.53" stroke="#000"/>
+</g>
+</g>
+</svg>
