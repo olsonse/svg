@@ -587,6 +587,16 @@ svg-extract -- Extract independent graphic files from SVG pictures
 %   \includesvg[svgextension=dia,§\meta{additional~options}§]§\marg{filename}§
 % \end{svgexample}
 %
+% \DescribeOption{id}^^A
+% \changes{v2.02l}{2025/03/15}{option \opt{id} added to only include object with
+% specified ID}^^A
+% This option can be used to specify the ID attribute of the object that will be
+% exported.  By default, all objects within the \opt{inkscapearea} are included
+% in the export.
+% \begin{svgexample}
+%   \includesvg[id=g1234,§\meta{additional~options}§]§\marg{svg~filename}§
+% \end{svgexample}
+%
 %
 %
 % \subsection{Options for the graphic inclusion}
@@ -650,7 +660,7 @@ svg-extract -- Extract independent graphic files from SVG pictures
 %
 % \DescribeMacroParameters{\includesvg}{^^A
 %   inkscape,inkscapeformat,inkscapelatex,inkscapearea,inkscapedpi,^^A
-%   inkscapeopt,svgextension,width,height,distort,scale,pretex,apptex,draft}^^A
+%   inkscapeopt,svgextension,id,width,height,distort,scale,pretex,apptex,draft}^^A
 % It is used right in the same way but where \meta{svg~filename} is the 
 % file~name of the SVG~file, where any given file~extension will be replaced
 % with \file{.svg} ruthlessly. In order to change the source file format for 
@@ -1143,6 +1153,10 @@ svg-extract -- Extract independent graphic files from SVG pictures
 %     \caption{The same example figure without \LaTeX~support}%
 %   \end{figure}
 %   \end{document}
+%   \begin{figure}\centering
+%     \includesvg[id=path2992,width=.5\linewidth]{svg-example}
+%     \caption{The same example figure with only object path2992}
+%   \end{figure}
 % \end{svgexample}
 % \begin{figure}[tb]
 %   \null\hfill^^A
@@ -1165,9 +1179,16 @@ svg-extract -- Extract independent graphic files from SVG pictures
 %     The same example figure without \LaTeX~support\label{fig:example}^^A
 %   }^^A
 % \end{figure}
+% \begin{figure}[tb]\centering
+%   \includesvg[id=path2992,width=.5\linewidth]{svg-example}^^A
+%   \caption{^^A
+%     The same example figure with only object path2992\label{fig:example-id}^^A
+%   }^^A
+% \end{figure}
 %
-% The output is shown in \autoref{fig:example-tex} and \autoref{fig:example}. 
-% Within this example the file \file{svg-example.svg} was included three times 
+% The output is shown in \autoref{fig:example-tex}, \autoref{fig:example}, and
+% \autoref{fig:example-id}.
+% Within this example the file \file{svg-example.svg} was included three times
 % using the \cs{includesvg} command.
 %
 % If you are willing to compile the example, there are two aspects to consider. 
@@ -1188,6 +1209,9 @@ svg-extract -- Extract independent graphic files from SVG pictures
 %
 % In \autoref{fig:example} the same SVG~file was used but without the export 
 % of a separate \LaTeX~file containing all text elements. 
+%
+% In \autoref{fig:example-id}, the same SVG~file was used but limited to the
+% content identified by the SVG~object identified as path2992.
 %
 % Feel free to use this given example to try out all the options and 
 % possibilities described in \autoref{sec:inkscape} for package \pkg{svg}.
@@ -2283,8 +2307,29 @@ svg-extract -- Extract independent graphic files from SVG pictures
 % \end{macro}^^A \svg@ink@dpi
 % \end{option}^^A inkscapedensity
 % \end{option}^^A inkscapedpi
+% \begin{option}{id}
+% \changes{v2.02l}{2025/03/15}{new}^^A
+% \begin{macro}{\svg@ink@id}
+% The exported object ID for an \app{Inkscape} graphic can be set with this
+% option.
+%    \begin{macrocode}
+\newcommand*\svg@ink@id{}
+\let\svg@ink@id\relax
+\DefineFamilyKey{SVG}{id}{%
+  \FamilyKeyStateUnknownValue%
+  \svg@ifvalueisrelax{#1}{%
+    \let\svg@ink@id\relax%
+  }{%
+    \def\svg@ink@id{#1}%
+  }%
+  \FamilyKeyStateProcessed%
+}
+%    \end{macrocode}
+% \end{macro}^^A \svg@ink@id
+% \end{option}^^A id
 % \begin{macro}{\svg@ink@cmd}
 % \changes{v2.02f}{2020/05/06}{distinguish \app{Inkscape}~CLI versions}^^A
+% \changes{v2.02l}{2025/03/15}{option \opt{id} added for export}^^A
 % The actual usage of the \app{Inkscape} command~line~interface.
 %    \begin{macrocode}
 \newcommand*\svg@ink@cmd[2]{%
@@ -2292,6 +2337,7 @@ svg-extract -- Extract independent graphic files from SVG pictures
   \ifx\svg@ink@dpi\relax\else--export-dpi=\svg@ink@dpi\space\fi%
   \if@svg@ink@latex--export-latex\space\fi%
   \ifx\svg@ink@opt\@empty\else\svg@ink@opt\space\fi%
+  \ifx\svg@ink@id\relax\else--export-id="\svg@ink@id"\space\fi%
   \ifcase\svg@ink@ver\relax% 0.x detected
     --without-gui\space%
     --export-\svg@ink@format="#2.\svg@ink@format"%
@@ -2396,10 +2442,13 @@ svg-extract -- Extract independent graphic files from SVG pictures
 % \begin{option}{inkscapename}
 % \changes{v2.00}{2017/02/17}{new}^^A
 % \begin{macro}{\svg@out@name}
+% \changes{v2.02l}{2025/03/15}{Use object ID as part of derived filename}^^A
 % \begin{macro}{\svg@out@base}
 % With option \opt{inkscapename} the name of the exported file can be changed.
 %    \begin{macrocode}
-\newcommand*\svg@out@name{\svg@file@name\svg@file@suffix}
+\newcommand*\svg@out@name{%
+  \svg@file@name\ifx\svg@ink@id\relax\else-\svg@ink@id\fi\svg@file@suffix%
+}
 \newcommand*\svg@out@base{\svg@out@path\svg@out@name.\svg@ink@format}
 \DefineFamilyKey{SVG}{inkscapename}{%
   \renewcommand*\svg@out@name{#1\svg@file@suffix}%
@@ -2739,6 +2788,8 @@ svg-extract -- Extract independent graphic files from SVG pictures
 % \changes{v2.00}{2017/02/17}{new}^^A
 % \begin{parameter}{svgextension}
 % \changes{v2.01}{2017/11/27}{new}^^A
+% \begin{parameter}{id}
+% \changes{v2.02l}{2025/03/15}{new}^^A
 % \begin{parameter}{width}
 % \begin{parameter}{height}
 % \changes{v2.00}{2017/02/17}{new}^^A
@@ -2765,6 +2816,7 @@ svg-extract -- Extract independent graphic files from SVG pictures
 % \end{parameter}^^A distort
 % \end{parameter}^^A height
 % \end{parameter}^^A width
+% \end{parameter}^^A id
 % \end{parameter}^^A svgextension
 % \end{parameter}^^A inkscapeopt
 % \end{parameter}^^A inkscapedpi
@@ -3053,6 +3105,9 @@ svg-extract -- Extract independent graphic files from SVG pictures
             Calling Inkscape%
             \ifx\svg@ink@opt\@empty\else%
               \space with added options `\svg@ink@opt'%
+            \fi%
+            \ifx\svg@ink@id\@empty\else%
+              \space with added object id=`\svg@ink@id'%
             \fi%
           }%
 %    \end{macrocode}
